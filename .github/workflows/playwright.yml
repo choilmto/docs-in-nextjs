@@ -16,6 +16,9 @@ jobs:
     - name: Add hosts to /etc/hosts
       run: |
         sudo echo "127.0.0.1 localhost" | sudo tee -a /etc/hosts
+    - name: debug
+      run: |
+        cat /etc/hosts
     - name: Install dependencies
       run: npm install -g pnpm && pnpm install
     - name: Install Playwright Browsers
