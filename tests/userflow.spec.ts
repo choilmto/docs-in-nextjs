@@ -1,17 +1,17 @@
 import { test, expect } from '@playwright/test'
 
 test('should navigate to the about page', async ({ page }) => {
-  await page.goto('http://127.0.0.1:3000/')
+  await page.goto('http://localhost:3000/')
 
   await page.click('text=Another Page')
 
-  await expect(page).toHaveURL('http://127.0.0.1:3000/another')
+  await expect(page).toHaveURL('http://localhost:3000/another')
   
   await expect(page.locator('h1')).toContainText('Another Page')
 })
 
 test('should increment buttons', async ({ page }) => {
-  await page.goto('http://127.0.0.1:3000/another')
+  await page.goto('http://localhost:3000/another')
 
   for (let i=0; i < 4; i++) {
     const compButton = page.getByRole('button').getByText(/Clicked/).first()
