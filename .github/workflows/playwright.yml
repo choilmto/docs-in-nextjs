@@ -21,6 +21,10 @@ jobs:
         cat /etc/hosts
     - name: Install dependencies
       run: npm install -g pnpm && pnpm install
+    - name: Build files
+      run: npm run build
+    - name: Start server
+      run: npm run start
     - name: Install Playwright Browsers
       run: pnpm exec playwright install --with-deps
     - name: Run Playwright tests
