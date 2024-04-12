@@ -5,12 +5,14 @@ on:
       - '__tests__/**'
       - 'components/**'
       - '.github/workflows/jest.yml'
+      - 'jest.config.ts'
     branches: [ main ]
   pull_request:
     paths:
       - '__tests__/**'
       - 'components/**'
       - '.github/workflows/jest.yml'
+      - 'jest.config.ts'
     branches: [ main ]
 jobs:
   test:
