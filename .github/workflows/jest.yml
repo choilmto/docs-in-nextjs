@@ -4,11 +4,13 @@ on:
     paths:
       - '__tests__/**'
       - 'components/**'
+      - '.github/workflows/jest.yml'
     branches: [ main ]
   pull_request:
     paths:
       - '__tests__/**'
       - 'components/**'
+      - '.github/workflows/jest.yml'
     branches: [ main ]
 jobs:
   test:
