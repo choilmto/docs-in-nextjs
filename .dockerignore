@@ -1,0 +1,15 @@
+# .dockerignore
+
+.github
+.next
+.swc
+node_modules
+playwright-report
+terraform
+test-results
+tests-examples
+.dockerignore
+.gitignore
+Dockerfile
+LICENSE
+README.md
