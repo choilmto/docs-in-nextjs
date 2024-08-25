@@ -2,7 +2,9 @@ name: cd
 
 on:
   pull_request:
-    branches: main
+    branches: 
+      - main
+    types: closed
 
 jobs:
   terraform_ecr:
